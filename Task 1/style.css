@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline:invert;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+.container
+{
+    position: relative;
+    min-width: 300px;
+    min-height: 400px;
+    background-color: #333;
+}
+
+.calculator{
+    background-color: #333; 
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: inset 25px 25px 75px rgb(0,0,0,0.25), 25px 25px 72px rgb(0,0,0,0.25),
+    inset -5px -5px 12px rgb(0,0,0,.4), inset -5px -5px 12px rgb(0,0,0,.4);
+    display: grid;
+    grid-template-columns:repeat(5,80px) ;   
+}
+/* input bar styling */
+input{
+    position: relative;
+    grid-column: span 5;
+    height: 100px;
+    width: 380px;
+    background-color: #ecf0f3;
+    box-shadow: inset -5px -5px 12px #FFFFFF, inset 5px 5px 12px rgb(0,0,0,.16);
+    border:none;
+    border-radius: 10px;
+    color: rgb(0,0,0);
+    font-size: 40px;
+    text-align: end;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+/* button styling */
+
+button {
+    height: 50px;
+    width: 70px;
+    box-shadow: inset -5px -5px 12px #141E27, inset 5px 5px 12px rgb(0,0,0,.16);
+    background-color: #9D9D9D;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    border-radius: 10px;
+    margin:5px;
+    
+}
+button:hover {
+    background-color: #E6E6E6;
+    
+}
+.equal{
+   
+    width: 140px;
+    background-color: #4D96FF;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin:5px 9px;
+    
+}
+.clear{
+    background-color: #FF1700;
+}
